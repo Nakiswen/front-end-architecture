@@ -9,18 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "canvas": "^2.11.2",
+    "false": "^0.0.4",
+    "formidable": "^3.5.2",
+    "gifencoder": "^2.0.1",
+    "lucide-react": "^0.453.0",
     "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "22.7.7",
-    "@types/react": "18.3.11",
+    "@types/formidable": "^3.4.5",
+    "@types/gifencoder": "^2.0.3",
+    "@types/node": "^22.8.1",
+    "@types/react": "^18.3.12",
     "@types/react-dom": "^18",
+    "clsx": "^2.1.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
     "postcss": "^8",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss": "^3.4.1",
-    "typescript": "5.6.3"
+    "typescript": "^5.6.3"
   }
 }
