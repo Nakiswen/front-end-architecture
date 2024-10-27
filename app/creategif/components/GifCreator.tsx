@@ -2,14 +2,14 @@
 // app/components/GifCreator.tsx
 import React, { useState, useEffect } from 'react';
 import { Loader2, AlertCircle } from 'lucide-react';
-import { Button } from '@/creategif/components/ui/button';
+import { Button } from './ui/Button';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
   CardDescription
-} from '@/creategif/components/ui/card';
+} from './ui/Card';
 
 interface GifCreatorProps {
   maxFileSize?: number;
