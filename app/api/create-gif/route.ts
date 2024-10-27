@@ -1,10 +1,8 @@
 import { NextResponse } from 'next/server';
-// import multer from 'multer';
 import GIFEncoder from 'gifencoder';
 import { createCanvas, loadImage } from 'canvas';
 
-// 配置 multer 使用内存存储
-// const upload = multer({ storage: multer.memoryStorage() });
+export const runtime = 'edge';
 
 // 定义 API 路由的 POST 请求处理逻辑
 export async function POST(req: Request) {
