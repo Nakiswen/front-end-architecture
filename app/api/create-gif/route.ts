@@ -12,7 +12,7 @@ export const runtime = 'nodejs';
 export async function POST(request: NextRequest) {
     try {
         const formData = await request.formData();
-        const files = formData.getAll('images');
+        const files = formData.getAll('images') as File[];
 
         if (!files || files.length === 0) {
             return NextResponse.json(
@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
 
         // 保存上传的文件并获取文件路径
         const filePaths = await Promise.all(
-            files.map(async (file: any, index) => {
+            files.map(async (file, index) => {
                 const bytes = await file.arrayBuffer();
                 const buffer = Buffer.from(bytes);
                 const filePath = path.join(tempDir, `image-${index}.png`);

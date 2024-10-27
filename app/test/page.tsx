@@ -38,13 +38,13 @@ export default function App() {
 
 const MyContext = createContext(0);
 
-const A = memo(({ children }) => {
+const A = memo(() => {
     console.log('A')
     return <B></B>
 })
 
 function B() {
-    const count = useContext(MyContext)
+    // const count = useContext(MyContext)
     console.log('B')
     return null
 }
@@ -69,5 +69,6 @@ export default function App() {
     return <MyContext.Provider value={state}>
         <A />
         <C />
+        <D />
     </MyContext.Provider>
 }
