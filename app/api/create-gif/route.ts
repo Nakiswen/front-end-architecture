@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
                     image.width * scale,
                     image.height * scale
                 );
-
+                // @ts-expect-error canvas may have mistake canvas type
                 encoder.addFrame(ctx);
             }
 
